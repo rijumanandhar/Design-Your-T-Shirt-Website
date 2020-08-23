@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<title> design </title>
+		<link type="text/css" rel="stylesheet" href="layout.css"><!--css-->
+		<link href='https://fonts.googleapis.com/css?family=Shadows Into Light' rel='stylesheet'><!--Google Fonts-->
+		<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'><!--Google Fonts-->
+	</head>
+	<body>
+		<script >
+	  		function validate() { //alerts user to log in before submitting designs
+	  			alert("Please Login To Submit");
+    			return false;
+    			}
+  
+		</script>
+		<a name="#design"><!--opens design.html-->
+		<div id="title">
+				<form>
+ 					 <input type="text" name="search" placeholder="Search.."><!--Search-->
+				</form>
+				<img class="img-circle" src="2.jpg"><!--Logo-->
+				<H1> Design Your T-shirts </H1><!--Title-->
+		</div>
+		<div id="menu">
+			<ul>
+				<li> <A HREF="index.html"> Home </A> </li> <!--index.html-->
+				<li> <A HREF="about.html"> About </A> </li> <!--about.html-->
+				<li> <A HREF="shop.html"> Shop </A> </li><!--shop.html-->
+				<li> <A HREF="#design"> Design Shirts </A> </li><!--design.html-->
+				<li> <A HREF="htwwn.html"> How This Website Was Made </A> </li><!--htwwb.html-->
+			<ul>
+		</div>
+		<div id="out">
+			<div id="left">
+				<div class="btn-group" ><!--login buttons-->
+  					<a href="login.html"> <button class="button"> Log In </button> </a>
+ 					<a href="login.html"><button class="button"> Sign Up </button></a>
+				</div>
+			</div>
+			<div id="container"><!-- image that on hover changes its opacity and shows text -->
+				<div id="oneII">
+					<div class="containerI">
+  							<img src="oneII.jpg" alt="Customer Approved" class="imageI" style="width:100%">
+  							<div class="middleI">
+    							<div class="textI">High Quality Fabric</div>
+  							</div>
+						</div>
+				</div>
+				<div id="twoII">
+					<div class="containerI"><!-- image that on hover changes its opacity and shows text -->
+  							<img src="twoII.jpg" alt="Customer Approved" class="imageI" style="width:100%">
+  							<div class="middleI">
+    							<div class="textI">Custom Prints and Designs</div>
+  							</div>
+						</div>
+				</div>
+				<div id="threeII">
+					<div class="containerI"><!-- image that on hover changes its opacity and shows text -->
+  							<img src="threeII.jpg" alt="Customer Approved" class="imageI" style="width:100%">
+  							<div class="middleI">
+    							<div class="textI">Easy Process</div>
+  							</div>
+						</div>
+				</div>
+				<br>
+				<div id="fourII"><!-- form to send the design -->
+					<h1> Send Us Your Designs And Get It Printed </h1>
+					<form >
+						<table>
+							<TR>
+								<TD> Gender </TD>
+								<TD> 
+									<input type="radio" name="gender" value="male" checked> Male
+  									<input type="radio" name="gender" value="female"> Female
+  								</TD>
+  							</TR>
+  							<TR>
+  								<TD> <br> Size </TD>
+  								<TD> <select><!-- gives options to choose sizes -->
+  										<option value="uno"> S </option>
+  										<option value="des"> M </option>
+  										<option value="tres"> L </option>
+  										<option value="quanto"> XL </option>
+  										<option value="sico"> XXL </option>
+  									 </select>
+  								</TD>
+							<TR>
+								<TD> Choose Design </TD>
+								<TD >  
+									<input type="checkbox" name="design" value="male"> <img src="fm6.jpg">
+									<input type="checkbox" name="design" value="male"> <img src="fm7.jpg">
+									<input type="checkbox" name="design" value="male"> <img src="f1.jpg">
+									<input type="checkbox" name="design" value="male"> <img src="f3.jpg">
+									<input type="checkbox" name="design" value="male"> <img src="f5.jpg">
+								</TD>
+							</TR>
+							<TR>
+								<TD> Choose Color </TD> 
+								<TD> <br>  <br> 
+									<input type="radio" name="color" value="Black" checked> Black
+									<input type="radio" name="color" value="White" > White  
+									<input type="radio" name="color" value="Blue" > Blue 
+									<input type="radio" name="color" value="Yellow"> Yellow 
+									<input type="radio" name="color" value="Green"> Green
+									<input type="radio" name="color" value="Red"> Red   <br> <br> <br> 
+
+								</TD> 
+							</TR>
+							<TR>
+								<TD > <label for="fileupload"> Send us your Designs: </label> <br> 
+									<input type="file" name="fileupload" value="fileupload" id="fileupload"> <!-- opens the upload box -->
+								</TD>
+							</TR>
+							<TR>
+								<TD> <br> <br> <br> </TD>
+								<TD> <br> <input type="submit" class="button" value="SEND" onclick="validate()"> </a><!-- checks if the user is logged in or not after hitting the submit button --> </TD>
+						</table>
+					</form><<!-- form ends -->
+				</div>
+			</div>
+			<div id="right" ><!--buttons for social media icons -->
+				<div class="btn-group">
+  					<button class="button"> <A HREF=https://www.facebook.com/ target=“_blank”> <img class="small-circle" src="fb.jpg"> </A> </button>
+ 					<button class="button"> <A HREF=https://www.instagram.com/ target=“_blank”><img class="small-circle" src="ig.jpg"> </A> </button>
+ 					<button class="button"> <A HREF=https://twitter.com/ target=“_blank”><img class="small-circle" src="tw.png"> </A> </button>
+					<button class="button"> <A HREF=https://https://www.pinterest.com/ target=“_blank”><img class="small-circle" src="pn.png"> </A> </button>
+					<button class="button"> <A HREF=https://https://plus.google.com/ target=“_blank”><img class="small-circle" src="gg.png"> </A> </button>
+				</div>
+			</div>
+		</div>
+		<div id="footer"><!--footer begins-->
+			<div id="le"><!-- left footer -->
+				<A HREF="about.html" target=“_blank”> About Us </a> 
+				<br>
+				Contact:<br>
+				rijumd@gmail.com 
+			</div>
+			<div id="ri"><!-- right footer -->
+				&copy; All rights reserved. <br>
+				Design Your T-Shirts
+			</div>
+
+		</div>
+	</body>
+</html>

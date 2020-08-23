@@ -1,0 +1,448 @@
+body{
+	background-color: #161616;
+}
+#title input[type=text] { /*search button */
+	float:right;
+	vertical-align: top;
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;/*transisition slow at beginning and end*/
+    transition: width 0.4s ease-in-out;
+}
+
+#title input[type=text]:focus { /*on focus the width of search bar is 100%*/
+    width: 100%;
+}
+
+#menu a:hover{ /*menu on hover gives red neon glow*/
+	 text-shadow: 5px 10px 10px #FF0000;
+}
+
+#title{ /*title*/
+	width:1000px;
+	height:75px;
+	background-color: black;
+	padding:10 10 25 10;
+	margin: 0 auto;
+}
+#title  h1{ /*title text*/
+	color: white;
+	font-family: 'Advent Pro';
+	display: inline;
+	vertical-align: middle;
+}
+
+.img-circle { /*image with circular border*/
+    border-radius: 50%;
+    height:75px;
+    width:75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+.img-circle:hover{ /*image with circular border hover*/
+	height:100px;
+	width:100px;
+}
+
+.small-circle { /*social media icons*/
+    border-radius: 50%;
+    height:30px;
+    width:30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.banner{
+	width:980px;
+	height:380px;
+	padding: 10 10 10 10;
+}
+ .space{
+ 	height:70px;
+ }
+ 
+#menu{ 			/*navigation menu layout*/
+	width:1000px;
+	height:50px;
+	background-color: #090909;
+	padding: 5 10 10 10;
+	margin: 0 auto;
+}
+
+#menu ul li{
+	display: block;
+	float: left;
+	padding-right: 50px;
+	font-family:'Shadows Into Light';
+	font-size: 25px;
+	vertical-align: middle;
+
+}
+#menu a{
+	text-decoration:none;
+	color: white;
+}
+#out{
+	width:1330px;
+	height:645px;
+	background-color:#161616; 
+}
+#out #container{ /*body container*/
+	width:1000px;
+	height:900px;
+	background-image: url("gray.jpg");
+	margin:0 auto;
+	padding: 10 10 10 10;
+}
+.style{ /* banner slideshow*/
+	padding:0px;
+	margin:0px; 
+	background-color:#fff;
+	font-family:'Open Sans',sans-serif,arial,helvetica,verdana;
+}
+#out #left{ /*left of container*/
+	width:165px;
+	float:left;
+	margin-top: 50px;
+}
+#out #right{ /*right of container*/
+	width:155px;
+	float:right;
+	margin-top: -750px;
+}
+#left .btn-group .button { /*buttons of Log In snd Sign Up*/
+    background-color: #161616; 
+    border: 2px solid #ACACAC;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    display: block;
+}
+#right .btn-group .button { /*buttons of social medias*/
+	background-color: #161616;
+    border: none;
+    padding: 5px 3px;
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    display: block;
+}
+#left .btn-group a{
+	text-decoration: none;
+	color: white;
+}
+
+#left .btn-group .button:hover {
+    background-color: white;
+    color: #161616;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); /*shadow effect*/
+}
+#left .btn-group .button a:hover {
+	color: #161616;
+}
+
+#right .btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+#right .btn-group .button:hover {
+  width:75px; /*on hover the icon moves  to right*/
+}
+
+#footer{
+	position:fixed; /*makes footer stay in one place*/
+	bottom:0;
+	left:0;
+	right:0;
+	height:70px;
+	margin-top: 50px;
+	width:1345px;
+	background-color: black;
+	margin:0 auto;
+}
+#footer #le{ /*left of footer*/
+	height: 70px;
+	width: 448px;
+	float:left;
+	padding-left: 160px;
+	color: white;
+	font-size: 15px;
+	padding-top: 5px;
+}
+#footer #le a{
+	text-decoration: none;
+	color: white;
+}
+#footer #le a:hover{
+	text-decoration: underline;
+}
+#footer #ri{/*right of footer*/
+	height: 70px;
+	width: 148px;
+	float:right;
+	padding: 10 10 10 10;
+	color: white;
+	font-size: 15px;
+}
+#container #one{ /*page 2 text on hover in the image*/
+	height:320px;
+	width:314px;
+	float:left;
+	border-bottom: 1px solid black;
+	
+}
+#container #two{/*page 2 text on hover in the image*/
+	height:320px;
+	height:320px;
+	width:314px;
+	float:left;
+	border-bottom: 1px solid black;
+}
+	
+#container #three{/*page 2 text on hover in the image*/
+	height:320px;
+	height:300px;
+	width:314px;
+	float:left;
+	
+}
+#container #four{ /*page 2 About*/
+	height:320px;
+	height: 950px;
+	width:660px;
+	float: right;
+	box-shadow: 10px 10px 10px grey;
+	padding: 10 10 10 10;
+}
+#container #four p{
+	font-family:'Mate' ;
+	font-size: 15px;
+}
+#container #four h2{
+	font-family: 'Mate SC';
+	font-size: 15px;
+}
+.containerI { /*container for page 2 text on hover in the image*/
+	height:320px;
+    position: relative;
+    width: 100%;
+}
+
+.imageI {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease; /*specifies a transition effect with a slow start, then fast, then end slowly*/
+  backface-visibility: hidden; /*The backside is not visible*/
+}
+
+.middleI { /*Transistion from image to text*/
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.containerI:hover .imageI {/*opacity of image decrease on hover*/
+  opacity: 0.3;
+}
+
+.containerI:hover .middleI {/*Text appears on hover*/  opacity: 1;
+}
+
+.textI { /*Text that appears on hover*/
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.textI a{
+	text-decoration: none;
+	color: white;
+}
+
+#container #oneII{ /*Page 3 Text appears on hover*/
+	height: 320px;
+	width: 320px;
+	border: 1px solid black;
+	float:left;
+}
+#container #twoII{
+	height: 320px;
+	width: 320px;
+	border: 1px solid black;
+	margin:0 auto;
+}
+#container #threeII{
+	height: 320px;
+	width: 320px;
+	border: 1px solid black;
+	float: right;
+	margin-top: -323px;
+}
+#container #fourII{ /*page four form layout*/
+	height: 560px;
+	width:980px;
+	border: 1px solid black;
+	margin: 0 auto;
+	background: white;
+	padding-left: 20px
+}
+#container #fourII h1{ 
+	font-family: 'Advent Pro';
+	text-align: center;
+}
+#container #fourII img{ /*design page form images*/
+	width:15%;
+}
+#container #I{ /*Login Page Login form*/
+	height:800px;
+	width: 350px;
+	float:left;
+	border: 1px solid white;
+	padding: 10 10 10 10;
+}
+#container #I h1{
+	font-family: 'Advent Pro';
+	text-align: center;
+}
+
+#container #I #rcornersI { /*round cornered boders*/
+    border-radius: 25px;
+    border: 2px solid #686868;
+    padding: 20px; 
+    width: 300px;
+    height: 150px; 
+    padding: 20 20 20 20; 
+
+}
+
+#container #II{ /*Login Page Sign Up form*/
+	height:800px;
+	width: 600px;
+	float:right;
+	border: 1px solid white;
+	padding: 10 10 10 10;
+}
+#container #II h1{
+	font-family: 'Advent Pro';
+	text-align: center;
+}
+#container #II #rcornersII {
+    border-radius: 25px;
+    border: 2px solid #686868;
+    padding: 20 20 20 20; 
+    width: 550px;
+    height: 700px;    
+}
+#II #rcornersII form table{
+	margin:0 auto;
+	font-size:20px;
+	margin-top: 10px;
+}
+#container .button {/*Login Page Login and Sign Up buttons*/
+    background-color:#161616 ;
+    border: 1px solid #ACACAC;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#container .button:hover {
+    background-color: white ;
+    border: 2px solid #ACACAC;
+    color: #161616;
+}
+.containerbox { /*Login Page text on hover images starts*/
+  position: relative;
+  width: 95%;
+}
+
+.imageIII {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayIII {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.containerbox:hover .overlayIII {
+  bottom: 0;
+  height: 100%;
+}
+
+.textIII {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.flex-container { /*flexbox for page shop*/
+    display: -webkit-flex;
+    display: flex; /*flex item are shown in a row*/
+    width: 900px;
+    height: 220px;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;/*flex item are justified evenly*/
+    padding-left: 40px;
+}
+
+.flex-item { /*flex items for page shop*/
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+}
+#container #outerlast{
+	width:981px;
+	height:900px;
+	margin:0 auto;
+	padding: 10 10 10 10;
+	border:1px solid black;
+	background-color: white;
+	}
+#outerlast h1{
+	font-family: 'Advent Pro';
+	text-align: center;
+}
+
+

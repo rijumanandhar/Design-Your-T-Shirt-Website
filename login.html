@@ -1,0 +1,170 @@
+<html>
+	<head>
+		<title> login signup </title>
+		<link type="text/css" rel="stylesheet" href="layout.css"><!--css-->
+		<link href='https://fonts.googleapis.com/css?family=Shadows Into Light' rel='stylesheet'><!--Google Fonts-->
+		<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'><!--Google Fonts-->
+	</head>
+	<body>
+	  <script >
+	  	function validateForm() {//if login form is empty alerts user to fill it
+    		var x = document.forms["myForm"]["email"].value;
+    		var y = document.forms["myForm"]["textfield1"].value;
+   		 	if (x == null || x == ""||y== null||y=="") {
+       	 	alert("Please Enter Email and Password To Login");
+       		 return false;
+    		}
+    	}
+    	function validateForm2() {//if sign up form isnt fully filled, alerts user to fill is
+    		var a = document.forms["SecForm"]["firstname"].value;
+    		var b = document.forms["SecForm"]["lastname"].value;
+    		var c = document.forms["SecForm"]["gender"].value;
+    		var d = document.forms["SecForm"]["bday"].value;
+    		var e = document.forms["SecForm"]["email1"].value;
+    		var f = document.forms["SecForm"]["Password1"].value;
+    		var g = document.forms["SecForm"]["Password2"].value;
+    		var h = document.forms["SecForm"]["tele"].value;
+    		var x = document.forms["SecForm"]["country"].value;
+    		if (a==null || a ==""||b==null || b ==""||c==null || c ==""||d==null || d ==""||e==null || e ==""||f==null || f ==""||g==null || g ==""||h==null || h ==""||x==null || x ==""){
+    			alert("Fill Everything To Sign Up");
+    			return false;
+    		}
+    		if (f!=g){//alerts users if password and confirm password do not match
+    			alert ("Passwords do not match");
+    			return false;
+    		}
+
+		}
+	  </script>
+		<div id="title">
+				<form>
+ 					 <input type="text" name="search" placeholder="Search.."><!--Search-->
+				</form>
+				<img class="img-circle" src="2.jpg"><!--Logo-->
+				<H1> Design Your T-shirts </H1><!--Title-->
+		</div>
+		<div id="menu">
+			<ul>
+				<li> <A HREF="index.html"> Home </A> </li> <!--Title-->
+				<li> <A HREF="about.html"> About </A> </li> <!--about.html-->
+				<li> <A HREF="shop.html"> Shop </A> </li><!--shop.html-->
+				<li> <A HREF="design.html"> Design Shirts </A> </li><!--design.html-->
+				<li> <A HREF="htwwn.html"> How This Website Was Made </A> </li><!--htwwb.html-->
+			<ul>
+		</div>
+		<div id="out">
+			<!--<div id="left">
+				<div class="btn-group" >
+  					<button class="button">Log In</button>
+ 					<button class="button">Sign Up</button>
+				</div>
+			</div>-->
+			<div id="container"> <!-- Login Form -->
+				<div id="I">
+					<h1> Login </h1>
+					<div id="rcornersI">
+							<form name="myForm" action="js"onsubmit="return validateForm()" method="get"><!-- Login Form -->
+								<table>
+									<tr>
+										<td> Email: </td>
+										<td> <input type="email" name="email"> </td>
+									</tr>
+									<tr>
+										<td> Password: </td>
+										<td> <input type="password" name="textfield1" > </td>
+										<br> <br>
+									</tr>
+									<tr>
+										<td>  <br> <input type="submit" class="button" value="Login"> </td>
+									</tr>
+								</table>
+							</form>
+					</div>
+					<br>
+					<div class="containerbox"> <!-- Image on hover slides down a text message -->
+ 						 <img src="last.jpg" alt="shirts" class="imageIII">
+ 							 <div class="overlayIII">
+   								 <div class="textIII">We love printing, <br>and it shows in our work! </div>
+ 							 </div>
+					</div>
+				</div>
+				<div id="II">
+					<h1> Sign Up </h1>
+						<div id="rcornersII">
+							<form name="SecForm" action="js"onsubmit="return validateForm2()" method="get"><!-- Sign Up Form -->
+								<table>
+									<tr>
+										<td> <br>First Name: </td>
+										<td> <input type="text" name="firstname" > </td>
+									</tr>
+									<tr>
+										<td> <br>Last Name: </td>
+										<td> <input type="text" name="lastname" > </td>
+									</tr>
+									<tr>
+										<td> <br>Gender: </td>
+										<td> 
+											<input type="radio" name="gender" value="male" checked> Male
+  											<input type="radio" name="gender" value="female"> Female 
+  										</td>
+									</tr>
+									<tr>
+										<td> <br>Date Of Birth: </td>
+										<td> <input type="date" name="bday"> </td>
+									</tr>
+									<tr>
+										<td> <br>Email: </td>
+										<td> <input type="email" name="email1"> </td>
+									</tr>
+									<tr>
+										<td> <br>Password: </td>
+										<td> <input type="password" name="Password1" > </td>
+									</tr>
+									<tr>
+										<td> <br>Confirm Password: </td>
+										<td> <input type="password" name="Password2" > </td>
+									</tr>
+									<tr>
+										<td> <br>Phone Number: </td>
+										<td> <input type="tel" name="tele"> </td>
+									</tr>
+									<tr>
+										<td> <br>Country: </td>
+										<td> <input type="text" name="country" > </td>
+									</tr>
+									<tr>
+										<td>  <br> <input type="reset" class="button" value="Reset"> </td>
+										<td>  <br><input type="submit" class="button" value="Sign in"> </td>
+									</tr>
+								</table>
+							</form><!--  Form Ends-->
+					</div>
+				</div>
+			</div>
+			<div id="right" ><!--buttons for social media icons -->
+				<div class="btn-group">
+  					<button class="button"> <A HREF=https://www.facebook.com/ target=“_blank”> <img class="small-circle" src="fb.jpg"> </A> </button>
+ 					<button class="button"> <A HREF=https://www.instagram.com/ target=“_blank”><img class="small-circle" src="ig.jpg"> </A> </button>
+ 					<button class="button"> <A HREF=https://twitter.com/ target=“_blank”><img class="small-circle" src="tw.png"> </A> </button>
+					<button class="button"> <A HREF=https://https://www.pinterest.com/ target=“_blank”><img class="small-circle" src="pn.png"> </A> </button>
+					<button class="button"> <A HREF=https://https://plus.google.com/ target=“_blank”><img class="small-circle" src="gg.png"> </A> </button>
+				</div>
+			</div>
+		</div>
+		<div id="footer"><!--footer begins-->
+			<div id="le"><!-- left footer -->
+				<A HREF="about.html" target=“_blank”> About Us </a> 
+				<br>
+				Contact:<br>
+				rijumd@gmail.com 
+			</div>
+			<div id="ri"><!-- right footer -->
+				&copy; All rights reserved. <br>
+				Design Your T-Shirts
+			</div>
+
+		</div>
+		
+
+	</body>
+</html>
